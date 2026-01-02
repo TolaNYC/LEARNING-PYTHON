@@ -91,3 +91,14 @@ g = x[:]
 
 
 
+
+# Deleting a range of elements (slicing deletion)
+# Let's create a list with enough elements
+ids = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+# To delete elements from index 10 to 12 (inclusive of 10, 11, 12)
+# We use slice notation: start index (inclusive) : end index (exclusive)
+# So we need to go up to 13
+del ids[10:13] 
+print(ids) 
+# notice 10, 11, 12 are gone
